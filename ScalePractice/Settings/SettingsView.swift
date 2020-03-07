@@ -20,8 +20,8 @@ struct SettingsView: View {
                     .font(.title)
                     .padding(.vertical)
                 Text("DesignerBlurb")
+                    .multilineTextAlignment(.center)
                     .padding(.bottom)
-                Text("ThanksQian").padding(.bottom)
                 Text("BugReportingBlurb")
                     .multilineTextAlignment(.center)
                 Button(action: {

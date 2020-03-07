@@ -118,13 +118,11 @@
 /* View Title */
 "Scale Practice" = "Scale Practice";
 /* Designer Acknowledgement */
-"DesignerBlurb" = "App Design by Alexander Burdiss";
+"DesignerBlurb" = "App Design by Alexander Burdiss and Qian Yu";
 /* Bug Report Blurb */
 "BugReportingBlurb" = "For questions, comments, or to report a bug, please contact Alexander Burdiss \n aburdiss@gmail.com";
 /* Copyright Information */
-"CopyrightBlurb" = "©2020 Alexander Burdiss";
-/* Thanks Qian for the translations! */
-"ThanksQian" = "Chinese Translations by Yu Qian";
+"CopyrightBlurb" = "©2020 Alexander Burdiss and Qian Yu";
 /* Advertisement for myself. */
 "Ars Nova Publishing" = "Ars Nova Publishing";
 "Publishing compositions and arrangements to suit all your needs." = "Publishing compositions and arrangements to suit all your needs.";

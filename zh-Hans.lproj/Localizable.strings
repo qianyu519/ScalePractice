@@ -70,62 +70,60 @@
 // Scales
 /* Default display scale */
 "No Scale Selected" = "未选择音阶";
-"Major" = "Major";
-"Natural Minor" = "Natural Minor";
-"Harmonic Minor" = "Harmonic Minor";
-"Melodic Minor" = "Melodic Minor";
-"Major Modes" = "Major Modes";
-"Melodic Minor Modes" = "Melodic Minor Modes";
-"Blues" = "Blues";
-"Pentatonic" = "Pentatonic";
-"Octatonic" = "Octatonic";
-"Whole Tone" = "Whole Tone";
+"Major" = "大调";
+"Natural Minor" = "自然小调";
+"Harmonic Minor" = "和声小调";
+"Melodic Minor" = "旋律小调";
+"Major Modes" = "大调式";
+"Melodic Minor Modes" = "旋律小调式";
+"Blues" = "布鲁斯";
+"Pentatonic" = "五音音阶";
+"Octatonic" = "八音音阶";
+"Whole Tone" = "全音音阶";
     // Individual scale labels
-"Major Pentatonic" = "Major Pentatonic";
-"Minor Pentatonic" = "Minor Pentatonic";
-"Ionian" = "Ionian";
-"Dorian" = "Dorian";
-"Phrygian" = "Phrygian";
-"Lydian" = "Lydian";
-"Mixolydian" = "Mixolydian";
-"Aeolian" = "Aeolian";
-"Locrian" = "Locrian";
-"Minor Major" = "Minor Major";
-"Dorian ♭2" = "Dorian ♭2";
-"Lydian Augmented" = "Lydian Augmented";
-"Lydian Dominant" = "Lydian Dominant";
-"Mixolydian ♭6" = "Mixolydian ♭6";
-"Locrian ♮2" = "Locrian ♮2";
-"Altered Scale" = "Altered Scale";
-"Whole-Half Octatonic" = "Whole-Half Octatonic";
-"Half-Whole Octatonic" = "Half-Whole Octatonic";
+"Major Pentatonic" = "大调五音音阶";
+"Minor Pentatonic" = "小调五音音阶";
+"Ionian" = "Ionian爱奥尼亚调式";
+"Dorian" = "Dorian多利亚调式";
+"Phrygian" = "Phrygian弗吉尼亚调式";
+"Lydian" = "Lydian吕底亚调式";
+"Mixolydian" = "Mixolydian混合吕底亚调式";
+"Aeolian" = "Aeolian伊奥利亚调式";
+"Locrian" = "Locrian洛克里亚调式";
+"Minor Major" = "Minor Major小大调";
+"Dorian ♭2" = "Dorian ♭2 多利亚调式♭2";
+"Lydian Augmented" = "Lydian Augmented吕底亚增强音阶";
+"Lydian Dominant" = "Lydian Dominant吕底亚属音阶";
+"Mixolydian ♭6" = "Mixolydian ♭6 米索利地安♭6";
+"Locrian ♮2" = "Locrian ♮2 洛克里亚♮2";
+"Altered Scale" = "Altered Scale变化音阶";
+"Whole-Half Octatonic" = "Whole-Half Octatonic整半八音音阶";
+"Half-Whole Octatonic" = "Half-Whole Octatonic半整八音音阶";
 
 // Arpeggios
 /* AdvancedArpeggioPracticeView/RandomArpeggioView Display View Message */
 "No Arpeggio Selected" = "未选择琶音";
-"MajorChord" = "Major";
-"Minor" = "Minor";
-"Augmented" = "Augmented";
-"Diminished" = "Diminished";
-"Dominant Seventh" = "Dominant Seventh";
-"Major Seventh" = "Major Seventh";
-"Minor Seventh" = "Minor Seventh";
-"Minor Major Seventh" = "Minor Major Seventh";
-"Augmented Minor Seventh" = "Augmented Seventh";
-"Half Diminished Seventh" = "Half-Diminished Seventh";
-"Diminished Seventh" = "Diminished Seventh";
+"MajorChord" = "大三和弦";
+"Minor" = "小三和弦";
+"Augmented" = "增强和弦";
+"Diminished" = "减和弦";
+"Dominant Seventh" = "属七和弦";
+"Major Seventh" = "大七和弦";
+"Minor Seventh" = "小七和弦";
+"Minor Major Seventh" = "小大七和弦";
+"Augmented Minor Seventh" = "增七和弦";
+"Half Diminished Seventh" = "半减七和弦";
+"Diminished Seventh" = "减七和弦";
 
 // Settings View
 /* View Title */
 "Scale Practice" = "音阶练习";
 /* Designer Acknowledgement */
-"DesignerBlurb" = "APP由Alexander Burdiss制作";
+"DesignerBlurb" = "APP由Alexander Burdiss和Qian Yu制作";
 /* Bug Report Blurb */
 "BugReportingBlurb" = "任何问题，评论，或者错误报告，联系Alexander Burdiss aburdiss@gmail.com";
 /* Copyright Information */
-"CopyrightBlurb" = "©2020 Alexander Burdiss";
-/* Thanks Qian for the translations! */
-"ThanksQian" = "由Qian Yu提供中文翻译";
+"CopyrightBlurb" = "©2020 Alexander Burdiss and Qian Yu";
 /* Advertisement for myself. */
 "Ars Nova Publishing" = "Ars Nova Publishing";
 "Publishing compositions and arrangements to suit all your needs." = "发表可以满足你所有需求的作曲与整理";
@@ -133,47 +131,47 @@
 // ScaleResourceModel
 // Most constructions and names do not need translated, only the descriptions.
     // Scale Descriptions
-"MajorScaleDescription" = "The Major scale是西方音乐里最常见的音阶.";
-"NaturalMinorScaleDescription" = "The Natural Minor scale从Major scale的第六音级开始.";
-"HarmonicMinorScaleDescription" = "The Harmonic Minor scale与The Natural Minor scale有同样的音符, 除了被调升的第七音级.";
+"MajorScaleDescription" = "大调音阶是西方音乐里最常见的音阶.";
+"NaturalMinorScaleDescription" = "自然小调音阶从大调音阶的第六音级开始.";
+"HarmonicMinorScaleDescription" = "和声小调音阶与自然小调音阶有同样的音符, 除了被调升的第七音级.";
 /* Melodic Minor Construction (It has more words than Ws and Hs. */
-"MelodicMinorScaleConstruction" = "W H W W W W H (上升)\nW H W W H W W (Natural Minor 下降)";
-"MelodicMinorScaleDescription" = "将The Harmonic Minor scale的第六音级调升即得上升Melodic Minor scale.下降Melodic Minor scale与The Natural Minor scale等同.";
-"IonianScaleDescription" = "The Major scale第一调式. 这一阶与Major scale等同.";
-"DorianScaleDescription" = "The Major scale第二调式.";
-"PhrygianScaleDescription" = "The Major scale第三调式.";
-"LydianScaleDescription" = "The Major scale第四调式.";
-"MixolydianScaleDescription" = "The Major scale第五调式.";
-"AeolianScaleDescription" = "The Major scale第六调式.";
-"LocrianScaleDescription" = "The Major scale第七调式.";
-"MinorMajorScaleDescription" = "The Melodic Minor scale第一调式.";
-"DorianFlat2ScaleDescription" = "The Melodic Minor scale第二调式.";
-"LydianAugmentedScaleDescription" = "The Melodic Minor scale第三调式.";
-"LydianDominantScaleDescription" = "The Melodic Minor scale第四调式.";
-"MixolydianFlatSixScaleDescription" = "The Melodic Minor scale第五调式.";
-"LocrianNaturalTwoScaleDescription" = "The Melodic Minor scale第六调式.";
-"AlteredScaleDescription" = "The Melodic Minor scale第七调式.";
+"MelodicMinorScaleConstruction" = "W H W W W W H (上升)\nW H W W H W W (自然小调音阶下降)";
+"MelodicMinorScaleDescription" = "将和声小调音阶的第六音级调升即得上升旋律小调音阶.下降旋律小调音阶与自然小调音阶等同.";
+"IonianScaleDescription" = "大调音阶第一调式. 这一阶与大调音阶等同.";
+"DorianScaleDescription" = "大调音阶第二调式.";
+"PhrygianScaleDescription" = "大调音阶第三调式.";
+"LydianScaleDescription" = "大调音阶第四调式.";
+"MixolydianScaleDescription" = "大调音阶第五调式.";
+"AeolianScaleDescription" = "大调音阶第六调式.";
+"LocrianScaleDescription" = "大调音阶第七调式.";
+"MinorMajorScaleDescription" = "旋律小调音阶第一调式.";
+"DorianFlat2ScaleDescription" = "旋律小调音阶第二调式.";
+"LydianAugmentedScaleDescription" = "旋律小调音阶第三调式.";
+"LydianDominantScaleDescription" = "旋律小调音阶第四调式.";
+"MixolydianFlatSixScaleDescription" = "旋律小调音阶第五调式.";
+"LocrianNaturalTwoScaleDescription" = "旋律小调音阶第六调式.";
+"AlteredScaleDescription" = "旋律小调音阶第七调式.";
 
-"BluesScaleDescription" = "This scale is mostly used in Blues and Jazz music.";
+"BluesScaleDescription" = "这个音阶主要在蓝调与爵士音乐中被使用.";
 "MajorPentatonicScaleDescription" = "省略四级音和七级音的自然大调.";
-"MinorPentatonicScaleDescription" = "The minor pentatonic scale is the same as the natural minor scale, without the second and sixth scale degrees.";
-"WholeHalfOctatonicScaleDescription" = "The Octatonic scale is a symmetrical scale consisting of alternating whole and half steps. The Whole-Half Octatonic scale begins with a whole step.";
-"HalfWholeOctatonicScaleDescription" = "The Octatonic scale is a symmetrical scale consisting of alternating whole and half steps. The Half-Whole Octatonic scale begins with a half step.";
-"WholeToneScaleDescription" = "The Whole Tone scale is a symmetrical scale, consisting of only whole steps.";
+"MinorPentatonicScaleDescription" = "小调五声音阶与没有第二和第六音阶的自然小调音阶相同.";
+"WholeHalfOctatonicScaleDescription" = "八音音阶是包含交替进行的整步和半步的对称音阶. 整半步音阶开始于整步.";
+"HalfWholeOctatonicScaleDescription" = "八音音阶是包含交替进行的整步和半步的对称音阶. 半整步音阶开始于半步.";
+"WholeToneScaleDescription" = "全音音阶是一个对称的音阶, 仅包含整步.";
 
 
     // Arpeggio Descriptions
 /* The Major Arpeggio consists of the first, third, and fifth scale degrees of the major scale. */
-"MajorArpeggioDescription" = "The Major arpeggio有Major Scale的第一, 第三, 和第五音级.";
+"MajorArpeggioDescription" = "主琶音有大调音阶的第一, 第三, 和第五音级.";
 /* The Minor arpeggio consists of the first, third, and fifth scale degrees of the Natural Minor scale. */
-"MinorArpeggioDescription" = "The Minor arpeggio有Natural Minor Scale的第一, 第三, 和第五音级.";
+"MinorArpeggioDescription" = "小琶音有自然小调音阶的第一, 第三, 和第五音级.";
 /* The Augmented arpeggio is the same as the Major arpeggio with a raised fifth scale degree.*/
-"AugmentedArpeggioDescription" = "The Augmented arpeggio与The Major arpeggio有同样的音符, 除了被调升的第q五音级.";
-"DiminishedArpeggioDescription" = "The Diminished arpeggio is the same as the minor arpeggio with a lowered fifth scale degree.";
-"DominantSeventhArpeggioDescription" = "The Dominant Seventh arpeggio is the same as the major arpeggio, with an added lowered seventh scale degree.";
-"MajorSeventhArpeggioDescription" = "The Major Seventh arpeggio is the same as the major arpeggio with an added seventh scale degree.";
-"MinorSeventhArpeggioDescription" = "The Minor Seventh arpeggio is the same as the Minor arpeggio with an added seventh scale degree.";
-"MinorMajorSeventhArpeggioDescription" = "The Minor Major Seventh arpeggio is the same as the Minor arpeggio with an added seventh scale degree.";
-"AugmentedSeventhArpeggioDescription" = "The Augmented Seventh arpeggio is the same as the Augmented Arpeggio with an added lowered seventh scale degree.";
-"HalfDiminishedSeventhArpeggioDescription" = "The Half Diminished Seventh arpeggio is the same as the Diminished arpeggio with an added lowered seventh scale degree.";
-"DiminishedSeventhArpeggioDescription" = "The Diminished Seventh arpeggio is the same as the Diminshed arpeggio with an added doubly lowered seventh scale degree.";
+"AugmentedArpeggioDescription" = "增强琶音与被调升了第五音级的主琶音相同.";
+"DiminishedArpeggioDescription" = "减和弦与被降低了第五音级的小琶音相同.";
+"DominantSeventhArpeggioDescription" = "属七和弦与被降低了第七音级的主琶音相同 is the same as the major arpeggio with an added lowered seventh scale degree.";
+"MajorSeventhArpeggioDescription" = "大七和弦与加上了第七音级的主琶音相同The Major Seventh arpeggio is the same as the major arpeggio with an added seventh scale degree.";
+"MinorSeventhArpeggioDescription" = "小七和弦与被加上了第七音级的小琶音相同The Minor Seventh arpeggio is the same as the Minor arpeggio with an added seventh scale degree.";
+"MinorMajorSeventhArpeggioDescription" = "小大七和弦与被加上了第七音级的小大第七琶音相同The Minor Major Seventh arpeggio is the same as the Minor arpeggio with an added seventh scale degree.";
+"AugmentedSeventhArpeggioDescription" = "增强七琶音与被加上了降低的第七音级的增强琶音相同The Augmented Seventh arpeggio is the same as the Augmented Arpeggio with an added lowered seventh scale degree.";
+"HalfDiminishedSeventhArpeggioDescription" = "半减七琶音与被加上了降低的第七音级的减琶音相同The Half Diminished Seventh arpeggio is the same as the Diminished arpeggio with an added lowered seventh scale degree.";
+"DiminishedSeventhArpeggioDescription" = "减七琶音与被加上了降低的双次的第七音级的减琶音相同The Diminished Seventh arpeggio is the same as the Diminshed arpeggio with an added doubly lowered seventh scale degree.";

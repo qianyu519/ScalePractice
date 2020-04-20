@@ -35,6 +35,19 @@ struct SettingsView: View {
                     .padding()
                         
                 }
+                Button(action: {
+                    let url = URL(string: "http://www.bandroomonline.com")!
+                    UIApplication.shared.open(url)
+                }) {
+                    Group {
+                        Text("Visit ")
+                        + Text("Band Room Online")
+                        .italic()
+                    }
+                .padding()
+                    .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1))
+                .padding()
+                }
                 Spacer()
                 // Advertisement that sends users to Sheet Music Plus to buy my music.
                 HStack {

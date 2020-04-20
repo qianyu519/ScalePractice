@@ -126,6 +126,10 @@
 /* Advertisement for myself. */
 "Ars Nova Publishing" = "Ars Nova Publishing";
 "Publishing compositions and arrangements to suit all your needs." = "Publishing compositions and arrangements to suit all your needs.";
+"Send Feedback" = "Send Feedback";
+/* This needs to have the trailing space in English*/
+"Visit " = "Visit ";
+"Band Room Online" = "Band Room Online";
 
 // ScaleResourceModel
 // Most constructions and names do not need translated, only the descriptions.

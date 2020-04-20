@@ -92,13 +92,13 @@
 "Locrian" = "Locrian洛克里亚调式";
 "Minor Major" = "Minor Major小大调";
 "Dorian ♭2" = "Dorian ♭2 多利亚调式♭2";
-"Lydian Augmented" = "Lydian Augmented吕底亚增强音阶";
-"Lydian Dominant" = "Lydian Dominant吕底亚属音阶";
+"Lydian Augmented" = "Lydian Aug.吕底亚增强音阶";
+"Lydian Dominant" = "Lydian Dom.吕底亚属音阶";
 "Mixolydian ♭6" = "Mixolydian ♭6 米索利地安♭6";
 "Locrian ♮2" = "Locrian ♮2 洛克里亚♮2";
 "Altered Scale" = "Altered Scale变化音阶";
-"Whole-Half Octatonic" = "Whole-Half Octatonic整半八音音阶";
-"Half-Whole Octatonic" = "Half-Whole Octatonic半整八音音阶";
+"Whole-Half Octatonic" = "W-H Octatonic整半八音音阶";
+"Half-Whole Octatonic" = "H-W Octatonic半整八音音阶";
 
 // Arpeggios
 /* AdvancedArpeggioPracticeView/RandomArpeggioView Display View Message */
@@ -127,6 +127,10 @@
 /* Advertisement for myself. */
 "Ars Nova Publishing" = "Ars Nova Publishing";
 "Publishing compositions and arrangements to suit all your needs." = "发表可以满足你所有需求的作曲与整理";
+"Send Feedback" = "给我们反馈";
+/* This needs to have the trailing space in English*/
+"Visit " = "浏览 ";
+"Band Room Online" = "Band Room Online";
 
 // ScaleResourceModel
 // Most constructions and names do not need translated, only the descriptions.
@@ -168,10 +172,10 @@
 /* The Augmented arpeggio is the same as the Major arpeggio with a raised fifth scale degree.*/
 "AugmentedArpeggioDescription" = "增强琶音与被调升了第五音级的主琶音相同.";
 "DiminishedArpeggioDescription" = "减和弦与被降低了第五音级的小琶音相同.";
-"DominantSeventhArpeggioDescription" = "属七和弦与被降低了第七音级的主琶音相同 is the same as the major arpeggio with an added lowered seventh scale degree.";
-"MajorSeventhArpeggioDescription" = "大七和弦与加上了第七音级的主琶音相同The Major Seventh arpeggio is the same as the major arpeggio with an added seventh scale degree.";
-"MinorSeventhArpeggioDescription" = "小七和弦与被加上了第七音级的小琶音相同The Minor Seventh arpeggio is the same as the Minor arpeggio with an added seventh scale degree.";
-"MinorMajorSeventhArpeggioDescription" = "小大七和弦与被加上了第七音级的小大第七琶音相同The Minor Major Seventh arpeggio is the same as the Minor arpeggio with an added seventh scale degree.";
-"AugmentedSeventhArpeggioDescription" = "增强七琶音与被加上了降低的第七音级的增强琶音相同The Augmented Seventh arpeggio is the same as the Augmented Arpeggio with an added lowered seventh scale degree.";
-"HalfDiminishedSeventhArpeggioDescription" = "半减七琶音与被加上了降低的第七音级的减琶音相同The Half Diminished Seventh arpeggio is the same as the Diminished arpeggio with an added lowered seventh scale degree.";
-"DiminishedSeventhArpeggioDescription" = "减七琶音与被加上了降低的双次的第七音级的减琶音相同The Diminished Seventh arpeggio is the same as the Diminshed arpeggio with an added doubly lowered seventh scale degree.";
+"DominantSeventhArpeggioDescription" = "属七和弦与被降低了第七音级的主琶音相同";
+"MajorSeventhArpeggioDescription" = "大七和弦与加上了第七音级的主琶音相同";
+"MinorSeventhArpeggioDescription" = "小七和弦与被加上了第七音级的小琶音相同";
+"MinorMajorSeventhArpeggioDescription" = "小大七和弦与被加上了第七音级的小大第七琶音相同";
+"AugmentedSeventhArpeggioDescription" = "增强七琶音与被加上了降低的第七音级的增强琶音相同";
+"HalfDiminishedSeventhArpeggioDescription" = "半减七琶音与被加上了降低的第七音级的减琶音相同";
+"DiminishedSeventhArpeggioDescription" = "减七琶音与被加上了降低的双次的第七音级的减琶音相同";

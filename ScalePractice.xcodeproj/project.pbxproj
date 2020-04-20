@@ -35,9 +35,10 @@
 		9C3B5D3D23D0241300C1B247 /* ScaleResourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleResourceModel.swift; sourceTree = "<group>"; };
 		9C6430C023D4F2070048748A /* AdvancedArpeggioPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedArpeggioPracticeView.swift; sourceTree = "<group>"; };
 		9C6430C223D4FFF10048748A /* ArpeggioResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArpeggioResourceView.swift; sourceTree = "<group>"; };
-		9C651AC023D4326400EF78ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C651AC623D4331A00EF78ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9C651AC823D4333D00EF78ED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9C74D9D3244E372D00D2AFD9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9C74D9D4244E3A8600D2AFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9FC1FC23D5173300493D37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9CB06A9523D0C9C000EB0969 /* ScaleInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleInfoView.swift; sourceTree = "<group>"; };
 		9CD4560323A913D400631DCA /* Scale Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scale Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +184,8 @@
 			knownRegions = (
 				en,
 				"zh-Hans",
+				fr,
+				Base,
 			);
 			mainGroup = 9CD455FA23A913D400631DCA;
 			productRefGroup = 9CD4560423A913D400631DCA /* Products */;
@@ -237,6 +240,7 @@
 			children = (
 				9C651AC623D4331A00EF78ED /* en */,
 				9C651AC823D4333D00EF78ED /* zh-Hans */,
+				9C74D9D3244E372D00D2AFD9 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = SOURCE_ROOT;
@@ -244,7 +248,7 @@
 		9CD4561123A913DA00631DCA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9C651AC023D4326400EF78ED /* en */,
+				9C74D9D4244E3A8600D2AFD9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -375,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.3;
 				DEVELOPMENT_ASSET_PATHS = "\"ScalePractice/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -383,6 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.ScalePractice;
 				PRODUCT_NAME = "Scale Practice";
 				SWIFT_VERSION = 5.0;
@@ -395,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.3;
 				DEVELOPMENT_ASSET_PATHS = "\"ScalePractice/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -403,6 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.ScalePractice;
 				PRODUCT_NAME = "Scale Practice";
 				SWIFT_VERSION = 5.0;

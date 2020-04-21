@@ -29,7 +29,6 @@ struct RandomArpeggioView: View {
     @State private var noArpeggioAlert = false
 
     var body: some View {
-        NavigationView {
             VStack {
                 ScaleDisplayView(newScaleText: newScaleText)
                     .padding(.top)
@@ -103,8 +102,6 @@ struct RandomArpeggioView: View {
                 }
             }
             .navigationBarTitle(Text("Random Arpeggio Practice"), displayMode: .inline)
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     func selectAllScales () {

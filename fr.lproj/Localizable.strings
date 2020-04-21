@@ -125,7 +125,7 @@
 "CopyrightBlurb" = "©2020 Alexander Burdiss et Qian Yu";
 /* Advertisement for myself. */
 "Ars Nova Publishing" = "Ars Nova Publishing";
-"Publishing compositions and arrangements to suit all your needs." = "-    Publication de compositions et d'arrangements adaptés à tous vos besoins.";
+"Publishing compositions and arrangements to suit all your needs." = "Publication de compositions et d'arrangements adaptés à tous vos besoins.";
 "Send Feedback" = "Envoyer un commentaire";
 /* This needs to have the trailing space in English*/
 "Visit " = "Visiter ";
@@ -137,7 +137,7 @@
 "MajorScaleDescription" = "La gamme majeure est la gamme la plus courante dans la musique occidentale";
 "NaturalMinorScaleDescription" = "La gamme mineure naturelle est construite en commençant au sixième degré de la gamme majeure.";
 "HarmonicMinorScaleDescription" = "La gamme mineure harmonique partage toutes les mêmes notes avec la gamme mineure naturelle, à l'exception de son septième degré de la gamme élevé.";
-/* Melodic Minor Construction (It has more words than Ws and Hs. */
+/* Melodic Minor Construction (It has more words than Ws and Hs) */
 "MelodicMinorScaleConstruction" = "W H W W W W H (ascendante)\nW H W W H W W (Mineure Naturelle descendante)";
 "MelodicMinorScaleDescription" = "La gamme mélodique mineure ascendante est la même que la gamme mineure harmonique avec un degré de la gamme sixième élevé. La gamme mineure mélodique descendante est équivalente à la gamme mineure naturelle.";
 "IonianScaleDescription" = "Le premier mode de la gamme majeure. Cette gamme est équivalente à la gamme majeure";

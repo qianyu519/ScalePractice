@@ -23,7 +23,7 @@ struct AdvancedArpeggioPracticeView: View {
     @State private var noArpeggioAlert = false
     
     var body: some View {
-        NavigationView {
+
             VStack {
                 ScaleDisplayView(newScaleText: NSLocalizedString(newArpeggioText, comment: ""))
                     .padding(.top)
@@ -87,11 +87,10 @@ struct AdvancedArpeggioPracticeView: View {
                     Alert(title: Text("Arpeggio Already Selected"), dismissButton: .default(Text("Dismiss")))
                 }
             .navigationBarTitle(Text("Advanced Arpeggio Practice"), displayMode: .inline)
-        }
+        
             .alert(isPresented: $noArpeggioAlert) {
                            Alert(title: Text("No Arpeggio Selected"), message: Text("Please select at least one arpeggio"), dismissButton: .default(Text("Dismiss")))
                        }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     func addToArpeggioList(noteName: String, arpeggioName: String) {

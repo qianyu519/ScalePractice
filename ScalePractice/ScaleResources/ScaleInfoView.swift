@@ -44,6 +44,7 @@ struct ScaleInfoView: View {
                     Image(systemName: "chevron.down")
                 })
         }
+    .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

@@ -11,19 +11,29 @@
 
 import SwiftUI
 
+/**
+ List view that shows all of the possible scale types. Functionality for opening and closing the details sheet for each scale is also contained in this view. 
+ */
 struct ScaleResourceView: View {
-    var scaleResourceModel:ScaleResourceModel
-    var scaleList = ScaleResourceModel().scales
+    /**
+     Scales model, containing all of the data about the scales.
+     */
+    @EnvironmentObject var scalesModel: ScaleResourceModel
+
+    /**
+     Boolean variable that determines whether the scale sheet should be shown.
+     */
     @State var scaleIsPresented: Bool = false
     
-    func showScale(){
-        scaleIsPresented = true
-    }
-    
+    /**
+     The user interface for this portion of the app. 
+     */
     var body: some View {
         NavigationView {
-            List(scaleList) { item in
-                Button(action: self.showScale){
+            List(scalesModel.scales) { item in
+                Button(action: {
+                    self.scaleIsPresented.toggle()
+                }) {
                     Text(NSLocalizedString(item.name, comment: ""))
                         .sheet(isPresented: self.$scaleIsPresented){
                             ScaleInfoView(scaleID: item.id, scaleName: NSLocalizedString(item.name, comment: ""), scaleConstruction: NSLocalizedString(item.construction, comment: ""), scaleDescription: NSLocalizedString(item.description, comment: ""), isPresented: self.$scaleIsPresented)
@@ -31,7 +41,7 @@ struct ScaleResourceView: View {
                     }
                 }
             .navigationBarTitle(Text("Scale Resources"), displayMode: .inline)
-                .navigationBarItems(trailing: NavigationLink(destination: ArpeggioResourceView(scaleResourceModel: scaleResourceModel)) {
+                .navigationBarItems(trailing: NavigationLink(destination: ArpeggioResourceView()) {
                 Text("Arpeggios")
                 .padding()
             })
@@ -43,6 +53,6 @@ struct ScaleResourceView: View {
 
 struct ScaleResourceView_Previews: PreviewProvider {
     static var previews: some View {
-        ScaleResourceView(scaleResourceModel:ScaleResourceModel())
+        ScaleResourceView().environmentObject(ScaleResourceModel())
     }
 }

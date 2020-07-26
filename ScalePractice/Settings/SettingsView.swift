@@ -12,67 +12,53 @@ import SwiftUI
 /**
  The User Interface.
  */
+
 struct SettingsView: View {
+    
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Scale Practice")
-                    .font(.title)
-                    .padding(.vertical)
-                Text("DesignerBlurb")
-                    .multilineTextAlignment(.center)
-                    .padding(.bottom)
-                Text("BugReportingBlurb")
-                    .multilineTextAlignment(.center)
-                Button(action: {
-                    let url = URL(string: "mailto:aburdiss@gmail.com")!
-                    UIApplication.shared.open(url)
-                }) {
-                    Text("Send Feedback")
-                       .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.purple, lineWidth: 1))
-                    .padding()
-                        
-                }
-                Button(action: {
-                    let url = URL(string: "http://www.bandroomonline.com")!
-                    UIApplication.shared.open(url)
-                }) {
-                    Group {
-                        Text("Visit ")
-                        + Text("Band Room Online")
-                        .italic()
-                    }
-                .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1))
-                .padding()
-                }
-                Spacer()
-                // Advertisement that sends users to Sheet Music Plus to buy my music.
-                HStack {
-                    Image("ArsNovaBookCover")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 150)
+            List {
+                Section(header: Text("Resources")) {
                     Button(action: {
-                        let url = URL(string: "https://www.sheetmusicplus.com/publishers/ars-nova-press-sheet-music/3015236")!
+                        let url = URL(string: "http://www.arsnovapublishing.com")!
                         UIApplication.shared.open(url)
                     }) {
-                        VStack(alignment: .leading) {
-                            Text("Ars Nova Publishing")
-                                .font(.headline)
-                            Text("Publishing compositions and arrangements to suit all your needs.")
-                                .font(.caption)
-                                .italic()
+                        HStack {
+                            Text("Visit Ars Nova Publishing")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                        }
+                    }
+                    Button(action: {
+                        let url = URL(string:
+                            "https://www.bandroomonline.com")!
+                        UIApplication.shared.open(url)
+                    }) {
+                        HStack {
+                            Text("Visit Band Room Online")
+                            Spacer()
+                            Image(systemName: "chevron.right")
                         }
                     }
                 }
-                .padding(.horizontal, 40)
                 
-                Text("CopyrightBlurb").padding(.bottom)
-            }.padding(.horizontal)
-        .navigationBarTitle(Text("Settings"), displayMode: .inline)
+                Section(header: Text("About")) {
+                    Text("© 2020 Alexander Burdiss")
+                    Text("Special Thanks to Qian Yu")
+                    Button(action: {
+                    let url = URL(string: "mailto:aburdiss@gmail.com")!
+                        UIApplication.shared.open(url)
+                    }) {
+                        HStack {
+                            Text("Send Feedback")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                        }
+                    }
+                }
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("More")
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

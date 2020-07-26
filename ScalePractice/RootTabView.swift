@@ -6,8 +6,6 @@
 //  Copyright © 2019 Alex Burdiss. All rights reserved.
 //  Updated 2/2/20
 
-// TODO: Get Chinese Translations
-
 import SwiftUI
 
 /**
@@ -15,12 +13,7 @@ import SwiftUI
  */
 struct RootTabView: View {
     /**
-     The model that holds all the content to be displayed in the Resource View.
-     */
-    @ObservedObject var scaleResourceModel:ScaleResourceModel
-    
-    /**
-     The User Interface.
+     The Main User Interface.
      */
     var body: some View {
         TabView {
@@ -29,7 +22,7 @@ struct RootTabView: View {
                     Image(systemName: "cube")
                     Text("Random")
             }
-        ScaleResourceView(scaleResourceModel:ScaleResourceModel())
+            ScaleResourceView()
                 .tabItem {
                     Image(systemName: "book")
                     Text("Resources")
@@ -45,12 +38,13 @@ struct RootTabView: View {
                     Text("Settings")
             }
         }
+        .environmentObject(ScaleResourceModel())
         .accentColor(Color.purple)
     }
 }
 
 struct RootTabView_Previews: PreviewProvider {
     static var previews: some View {
-    RootTabView(scaleResourceModel:ScaleResourceModel()).environment(\.colorScheme, .dark)
+        RootTabView()
     }
 }

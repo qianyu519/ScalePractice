@@ -4,17 +4,21 @@
 //
 //  Created by Alex Burdiss on 1/19/20.
 //  Copyright © 2020 Alex Burdiss. All rights reserved.
-//
-
-// TODO: Document this file!
 
 import SwiftUI
 
+/**
+ A List view of all of the arpeggios in the app. When clicked, a sheet will display information about that particular arpeggio. Functionality for opening and closing the sheet is also contained in this view.
+ */
 struct ArpeggioResourceView: View {
     /**
      The list of arpeggios, 
      */
     var arpeggioList = ScaleResourceModel().arpeggios
+    
+    /**
+     State variable that determines when to show the arpeggio info sheet
+     */
     @State var arpeggioIsPresented:Bool = false
     
     /**
@@ -23,6 +27,10 @@ struct ArpeggioResourceView: View {
     func showArpeggio() {
         arpeggioIsPresented = true
     }
+    
+    /**
+     The User Interface
+     */
     var body: some View {
         List(arpeggioList) { item in
             Button(action: self.showArpeggio) {

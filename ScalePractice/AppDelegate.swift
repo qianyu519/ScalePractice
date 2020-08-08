@@ -3,7 +3,7 @@
 //  ScalePractice
 //
 //  Created by Alex Burdiss on 12/17/19.
-//  Copyright © 2019 Alex Burdiss. All rights reserved.
+//  Copyright © 2020 Alex Burdiss. All rights reserved.
 //
 
 import UIKit

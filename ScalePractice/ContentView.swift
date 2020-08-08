@@ -3,10 +3,10 @@
 //  ScalePractice
 //
 //  Created by Alex Burdiss on 12/17/19.
-//  Copyright © 2019 Alex Burdiss. All rights reserved.
-//  Updated 2/2/20
+//  Copyright © 2020 Alex Burdiss. All rights reserved.
 
 import SwiftUI
+
 /**
  The primary view of the app. When the "Go" button is clicked, this app will generate a random scale from the switches that are selected, and displays it in the scale display view of the app.
  */
@@ -68,7 +68,7 @@ struct ContentView: View {
     @State var wholeToneSwitch = false
     
     /**
-     This state variable holds the boolean that determines if the "No Scale Alert" Dialogue box shows.
+     This State variable holds the boolean that determines if the "No Scale Alert" Alert shows.
      */
     @State private var noScaleAlert:Bool = false
     
@@ -80,7 +80,6 @@ struct ContentView: View {
             VStack {
                 ScaleDisplayView(newScaleText: newScaleText)
                     .padding(.top)
-                
                 VStack {
                     Toggle(isOn: $majorSwitch) {
                         Text("Major")
@@ -124,7 +123,6 @@ struct ContentView: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 1))
                 }
-                
                 Button(action: {
                     self.generateScales()
                 }) {
@@ -135,11 +133,12 @@ struct ContentView: View {
                             .font(.title)
                             .padding()
                         Spacer()
-                        }.overlay(
-                            RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1)
+                    }.overlay(
+                        RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1)
                     )
                     .padding()
                 }
+                .accessibility(value: Text("\(newScaleText)"))
                 .alert(isPresented: $noScaleAlert) {
                     Alert(title: Text("No Scale Selected"), message: Text("Please select at least one category"), dismissButton: .default(Text("Dismiss")))
                 }
@@ -212,7 +211,6 @@ struct ContentView: View {
             octatonicSwitch.toggle()
             wholeToneSwitch.toggle()
         }
-        
     }
     
     /**
@@ -266,13 +264,15 @@ struct ContentView: View {
             self.noScaleAlert = true
         } else {
             var newScale = possibleScales.randomElement()
-            while newScale == newScaleText { newScale = possibleScales.randomElement() }
+            while newScale == newScaleText {
+                newScale = possibleScales.randomElement()
+            }
             newScaleText = newScale ?? NSLocalizedString("No Scale Selected", comment: "")
         }
     }
     
     /**
-     This function constructs the scale name and scale note together to form one string to display on the screen.
+     Constructs the scale name and scale note together to form one string to display on the screen.
      */
     func createScaleArrayFromParts ( letterNames : [String], scaleNames: [String] ) -> [String] {
         var allLetterNamesOfScale: [String] = []
@@ -283,7 +283,6 @@ struct ContentView: View {
         }
         return allLetterNamesOfScale
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

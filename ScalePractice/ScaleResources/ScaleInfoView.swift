@@ -4,22 +4,41 @@
 //
 //  Created by Alex Burdiss on 1/16/20.
 //  Copyright © 2020 Alex Burdiss. All rights reserved.
-/*  Updated 2/2/20 - Fixed The iPhone X bug. Made the horizontal margin better. Implemented a navigation bar title to make the app better show on more devices */
-
-// TODO: Document this file!
-
 
 import SwiftUI
 
+/**
+ A view used in a sheet to show detailed informaiton about any scale or arpeggio in the app.
+ */
 struct ScaleInfoView: View {
+    /**
+     The ID of the scale or arpeggio being displayed
+     */
     var scaleID: Int
+    
+    /**
+     The Name of the scale or arpeggio being displayed
+     */
     var scaleName: String
+    
+    /**
+     The Construction of the scale or arpeggio being displayed
+     */
     var scaleConstruction: String
+    
+    /**
+     The Description of the scale or arpeggio being displayed
+     */
     var scaleDescription: String
+    
+    /**
+     Binding variable that when set to false closes the current sheet.
+     */
     @Binding var isPresented:Bool
     
-    
-    
+    /**
+     The User Interface
+     */
     var body: some View {
         NavigationView {
             VStack {

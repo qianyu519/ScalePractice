@@ -3,108 +3,167 @@
 //  ScalePractice
 //
 //  Created by Alex Burdiss on 12/27/19.
-//  Copyright © 2019 Alex Burdiss. All rights reserved.
-//
-
-// TODO: Document this file!
+//  Copyright © 2020 Alex Burdiss. All rights reserved.
 
 import SwiftUI
 
+/**
+ A mirror of the primary view of the app, but used for arpeggios. When the "Go" button is clicked, this app will generate a random scale from the switches that are selected, and displays it in the scale display view of the app.
+ */
 struct RandomArpeggioView: View {
     
-    @State var newScaleText = NSLocalizedString("No Arpeggio Selected", comment: "")
+    /**
+     This state variabel updates the veiw whenever a new arpeggio is inputted by the function.
+     */
+    @State var newArpeggioText = NSLocalizedString("No Arpeggio Selected", comment: "")
     
+    /**
+     This state variable holds the settings of the Major Switch, and allows the user to add major arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var majorSwitch = true
+    
+    /**
+     This State variable holds the settings of the minor switch, and allows the user to add minor arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var minorSwitch = false
+    
+    /**
+     This State variable holds the settings of the augmented switch, and allows the user to add augmented arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var augmentedSwitch = false
+    
+    /**
+     This State variable holds the settings of the diminished switch, and allows the user to add diminished arpeggios to the random array of arpeggios they are practicing
+     */
     @State var diminishedSwitch = false
+    
+    /**
+     This State variable holds the settings of the dominant seventh switch, and allows the user to add dominant seventh arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var dominantSeventhSwitch = false
+    
+    /**
+     This State variable holds the settings of the major seventh switch, and allows the user to add major seventh arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var majorSeventhSwitch = false
+    
+    /**
+     This State variable holds the settings for the minor seventh switch, and allows the user to add minor seventh arpeggios to the random array of arpeggios they are practicing
+     */
     @State var minorSeventhSwitch = false
+    
+    /**
+     This State variable holds the settings for the minor major seventh switch and allows the user to add minor major seventh arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var minorMajorSeventhSwitch = false
+    
+    /**
+     This State variable holds the settings for the augmented seventh switch and allows the user to add augmented seventh arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var augmentedSeventhSwitch = false
+    
+    /**
+     This State variable holds the settings for the half-diminished seventh switch, and allows the user to add half-diminished seventh arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var halfDiminishedSeventhSwitch = false
+    
+    /**
+     This State variable holds the settings for the diminished seventh switch, and allows the user to add diminished arpeggios to the random array of arpeggios they are practicing.
+     */
     @State var diminishedSeventhSwitch = false
     
+    /**
+     This State variable holds the boolean that determines if the "No Arpeggio Alert" Alert shows.
+     */
     @State private var noArpeggioAlert = false
 
+    /**
+     The User Interface.
+     */
     var body: some View {
+        VStack {
+            ScaleDisplayView(newScaleText: newArpeggioText)
+                .padding(.top)
             VStack {
-                ScaleDisplayView(newScaleText: newScaleText)
-                    .padding(.top)
-                VStack {
-                    Group {
-                        Toggle(isOn: $majorSwitch) {
-                            Text("MajorChord")
-                        }
-                        Toggle(isOn: $minorSwitch) {
-                            Text("Minor")
-                        }
-                        Toggle(isOn: $augmentedSwitch) {
-                            Text("Augmented")
-                        }
-                        Toggle(isOn: $diminishedSwitch) {
-                            Text("Diminished")
-                        }
+                Group {
+                    Toggle(isOn: $majorSwitch) {
+                        Text("MajorChord")
                     }
-                    Group {
-                        Toggle(isOn: $dominantSeventhSwitch) {
-                            Text("Dominant Seventh")
-                        }
-                        Toggle(isOn: $majorSeventhSwitch) {
-                            Text("Major Seventh")
-                        }
-                        Toggle(isOn: $minorSeventhSwitch) {
-                            Text("Minor Seventh")
-                        }
-                        Toggle(isOn: $minorMajorSeventhSwitch) {
-                            Text("Minor Major Seventh")
-                        }
-                        Toggle(isOn: $augmentedSeventhSwitch) {
-                            Text("Augmented Minor Seventh")
-                        }
-                        Toggle(isOn: $halfDiminishedSeventhSwitch) {
-                            Text("Half Diminished Seventh")
-                        }
-                        Toggle(isOn: $diminishedSeventhSwitch) {
-                            Text("Diminished Seventh")
-                        }
+                    Toggle(isOn: $minorSwitch) {
+                        Text("Minor")
+                    }
+                    Toggle(isOn: $augmentedSwitch) {
+                        Text("Augmented")
+                    }
+                    Toggle(isOn: $diminishedSwitch) {
+                        Text("Diminished")
                     }
                 }
-                .padding(.horizontal, 70)
-                Spacer()
-                Button(action: {
-                    self.selectAllScales()
-                }) {
-                    Text("All Arpeggios")
-                    .foregroundColor(.gray)
-                    .padding()
-                    .overlay(
-                    RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 1))
-                }
-                
-                Button(action: {
-                    self.generateScales()
-                }) {
-                    HStack {
-                        Spacer()
-                        Text("Go")
-                            .foregroundColor(.purple)
-                            .font(.title)
-                            .padding()
-                        Spacer()
-                    }.overlay(
-                    RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1))
-                    .padding()
-                }
-                .alert(isPresented: $noArpeggioAlert) {
-                    Alert(title: Text("No Arpeggio Selected"), message: Text("Please select at least one category"), dismissButton: .default(Text("Dismiss")))
+                Group {
+                    Toggle(isOn: $dominantSeventhSwitch) {
+                        Text("Dominant Seventh")
+                    }
+                    Toggle(isOn: $majorSeventhSwitch) {
+                        Text("Major Seventh")
+                    }
+                    Toggle(isOn: $minorSeventhSwitch) {
+                        Text("Minor Seventh")
+                    }
+                    Toggle(isOn: $minorMajorSeventhSwitch) {
+                        Text("Minor Major Seventh")
+                    }
+                    Toggle(isOn: $augmentedSeventhSwitch) {
+                        Text("Augmented Minor Seventh")
+                    }
+                    Toggle(isOn: $halfDiminishedSeventhSwitch) {
+                        Text("Half Diminished Seventh")
+                    }
+                    Toggle(isOn: $diminishedSeventhSwitch) {
+                        Text("Diminished Seventh")
+                    }
                 }
             }
-            .navigationBarTitle(Text("Random Arpeggio Practice"), displayMode: .inline)
+            .padding(.horizontal, 70)
+            Spacer()
+            Button(action: {
+                self.selectAllArpeggios()
+            }) {
+                Text("All Arpeggios")
+                .foregroundColor(.gray)
+                .padding()
+                .overlay(
+                RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 1))
+            }
+            
+            Button(action: {
+                self.generateArpeggios()
+            }) {
+                HStack {
+                    Spacer()
+                    Text("Go")
+                        .foregroundColor(.purple)
+                        .font(.title)
+                        .padding()
+                    Spacer()
+                }.overlay(
+                    RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1)
+                )
+                .padding()
+            }
+            .accessibility(value: Text("\(newArpeggioText)"))
+            .alert(isPresented: $noArpeggioAlert) {
+                Alert(title: Text("No Arpeggio Selected"), message: Text("Please select at least one category"), dismissButton: .default(Text("Dismiss")))
+            }
+        }
+        .navigationBarTitle(Text("Random Arpeggio Practice"), displayMode: .inline)
     }
     
-    func selectAllScales () {
+    /**
+     This function turns all of the Arpeggio toggles on.
+     
+     Note: If all of the arpeggio toggles are already on, it will turn all of them off except "Major".
+     */
+    func selectAllArpeggios () {
         var allOn = true
         if !majorSwitch {
             allOn = false
@@ -168,7 +227,10 @@ struct RandomArpeggioView: View {
         
     }
     
-    func generateScales () {        
+    /**
+     This function generates a random arpeggio from the switches that are turned on. It ensures that the arpeggio will be different from the previous one.
+     */
+    func generateArpeggios () {
         let indeterminantLetterNames = ["C", "C♯", "D", "E♭", "E", "F", "F♯", "G", "A♭", "A", "B♭", "B"]
         
         var possibleArpeggios: [String] = []
@@ -207,15 +269,21 @@ struct RandomArpeggioView: View {
             possibleArpeggios += createArpeggioArrayFromParts(letterNames: indeterminantLetterNames, scaleNames: ["Diminished Seventh"])
         }
         
+        // Ensuring the new arpeggio is different from the old one.
         if possibleArpeggios.count == 0 {
             self.noArpeggioAlert = true
         } else {
             var newScale = possibleArpeggios.randomElement()
-            while newScale == newScaleText { newScale = possibleArpeggios.randomElement() }
-            newScaleText = newScale ?? NSLocalizedString("No Arpeggio Selected", comment: "")
+            while newScale == newArpeggioText { 
+                newScale = possibleArpeggios.randomElement()
+            }
+            newArpeggioText = newScale ?? NSLocalizedString("No Arpeggio Selected", comment: "")
         }
     }
     
+    /**
+     Constructs the arpeggio name and note together to form one string to display on the screen.
+     */
     func createArpeggioArrayFromParts ( letterNames : [String], scaleNames: [String] ) -> [String] {
         var allLetterNamesOfScale: [String] = []
         for letter in letterNames {

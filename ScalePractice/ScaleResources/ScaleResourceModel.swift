@@ -4,13 +4,12 @@
 //
 //  Created by Alex Burdiss on 1/15/20.
 //  Copyright © 2020 Alex Burdiss. All rights reserved.
-//
-
-// TODO: Document this file!
-
 
 import Foundation
 
+/**
+ An object that holds information about one scale
+ */
 struct Scale:Identifiable {
     var id:Int
     var name:String
@@ -18,6 +17,9 @@ struct Scale:Identifiable {
     var description:String
 }
 
+/**
+ An object that holds information about one arpeggio
+ */
 struct Arpeggio:Identifiable {
     var id:Int
     var name:String
@@ -25,7 +27,13 @@ struct Arpeggio:Identifiable {
     var description:String
 }
 
+/**
+ The data collection for the app, defining and aggregating all of the scales and arpeggios for the resource view.
+ */
 class ScaleResourceModel:ObservableObject {
+    /**
+     An aggregation of all of the scales used in the app.
+     */
     var scales:[Scale] = [
         Scale(id: 0, name: "Major", construction: "W W H W W W H", description: "MajorScaleDescription"),
         Scale(id: 1, name: "Natural Minor", construction: "W H W W H W W", description: "NaturalMinorScaleDescription"),
@@ -52,6 +60,10 @@ class ScaleResourceModel:ObservableObject {
         Scale(id: 22, name: "Half-Whole Octatonic", construction: "H W H W H W H W", description: "HalfWholeOctatonicScaleDescription"),
         Scale(id: 23, name: "Whole Tone", construction: "W W W W W W", description: "WholeToneScaleDescription")
     ]
+    
+    /**
+     An aggregation of all of the arpeggios used in the app.
+     */
     var arpeggios:[Arpeggio] = [
         Arpeggio(id: 24, name: "MajorChord", construction: "M3 m3", description: "MajorArpeggioDescription"),
         Arpeggio(id: 25, name: "Minor", construction: "m3 M3", description: "MinorArpeggioDescription"),

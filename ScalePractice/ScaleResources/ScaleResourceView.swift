@@ -3,11 +3,7 @@
 //  ScalePractice
 //
 //  Created by Alex Burdiss on 12/27/19.
-//  Copyright © 2019 Alex Burdiss. All rights reserved.
-//
-
-// TODO: Document this file!
-
+//  Copyright © 2020 Alex Burdiss. All rights reserved.
 
 import SwiftUI
 
@@ -45,7 +41,6 @@ struct ScaleResourceView: View {
                 Text("Arpeggios")
                 .padding()
             })
-            
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

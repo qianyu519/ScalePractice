@@ -3,8 +3,7 @@
 //  ScalePractice
 //
 //  Created by Alex Burdiss on 12/27/19.
-//  Copyright © 2019 Alex Burdiss. All rights reserved.
-//  Updated 2/2/20
+//  Copyright © 2020 Alex Burdiss. All rights reserved.
 
 import SwiftUI
 
@@ -117,22 +116,24 @@ struct AdvancedScalePracticeView: View {
                             .padding()
                         Spacer()
                     }.overlay(
-                    RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1))
+                        RoundedRectangle(cornerRadius: 12).stroke(Color.purple, lineWidth: 1)
+                    )
                     .padding()
                 }
+                .accessibility(value: Text("\(newScaleText)"))
             }
-                .alert(isPresented: $alreadyAddedAlert) {
-                    Alert(title: Text("Scale Already Selected"), dismissButton: .default(Text("Dismiss")))
-                }
+            .alert(isPresented: $alreadyAddedAlert) {
+                Alert(title: Text("Scale Already Selected"), dismissButton: .default(Text("Dismiss")))
+            }
             .navigationBarTitle(Text("Advanced Scale Practice"), displayMode: .inline)
-        .navigationBarItems(trailing: NavigationLink(destination: AdvancedArpeggioPracticeView()) {
-            Text("Arpeggios")
-            .padding()
-        })
+            .navigationBarItems(trailing: NavigationLink(destination: AdvancedArpeggioPracticeView()) {
+                Text("Arpeggios")
+                    .padding()
+            })
         }
-            .alert(isPresented: $noScaleAlert) {
-                Alert(title: Text("No Scale Selected"), message: Text("Please select at least one scale"), dismissButton: .default(Text("Dismiss")))
-            }
+        .alert(isPresented: $noScaleAlert) {
+            Alert(title: Text("No Scale Selected"), message: Text("Please select at least one scale"), dismissButton: .default(Text("Dismiss")))
+        }
         .navigationViewStyle(StackNavigationViewStyle())
     }
     

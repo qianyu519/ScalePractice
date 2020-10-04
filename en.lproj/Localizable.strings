@@ -116,20 +116,14 @@
 
 // Settings View
 /* View Title */
-"Scale Practice" = "Scale Practice";
-/* Designer Acknowledgement */
-"DesignerBlurb" = "App Design by Alexander Burdiss and Qian Yu";
-/* Bug Report Blurb */
-"BugReportingBlurb" = "For questions, comments, or to report a bug, please contact Alexander Burdiss \n aburdiss@gmail.com";
-/* Copyright Information */
-"CopyrightBlurb" = "©2020 Alexander Burdiss and Qian Yu";
-/* Advertisement for myself. */
-"Ars Nova Publishing" = "Ars Nova Publishing";
-"Publishing compositions and arrangements to suit all your needs." = "Publishing compositions and arrangements to suit all your needs.";
+"More" = "More";
+"Visit Ars Nova Publishing" = "Visit Ars Nova Publishing";
+"Visit Band Room Online" = "Visit Band Room Online";
+
+"About" = "About";
+"© 2020 Alexander Burdiss" = "© 2020 Alexander Burdiss";
+"Special Thanks to Qian Yu" = "Special Thanks to Qian Yu";
 "Send Feedback" = "Send Feedback";
-/* This needs to have the trailing space in English*/
-"Visit " = "Visit ";
-"Band Room Online" = "Band Room Online";
 
 // ScaleResourceModel
 // Most constructions and names do not need translated, only the descriptions.

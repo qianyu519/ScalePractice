@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  ScalePractice
+
+  Created by Alexander Burdiss on 10/4/20.
+  Copyright © 2020 Alex Burdiss. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "音阶练习";
+"CFBundleName" = "音阶练习";

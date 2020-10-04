@@ -118,20 +118,14 @@
 
 // Settings View
 /* View Title */
-"Scale Practice" = "Pratiquer les gammes";
-/* Designer Acknowledgement */
-"DesignerBlurb" = "Conception de l'application par Alexander Burdiss et Qian Yu";
-/* Bug Report Blurb */
-"BugReportingBlurb" = "En cas de questions, pour signaler un bug ou pour toutes suggestions, n'hésitez à contacter Alexander Burdiss \n aburdiss@gmail.com";
-/* Copyright Information */
-"CopyrightBlurb" = "©2020 Alexander Burdiss et Qian Yu";
-/* Advertisement for myself. */
-"Ars Nova Publishing" = "Ars Nova Publishing";
-"Publishing compositions and arrangements to suit all your needs." = "Publication de compositions et d'arrangements adaptés à tous vos besoins.";
+"More" = "Plus";
+"Visit Ars Nova Publishing" = "Visiter Ars Nova Publishing";
+"Visit Band Room Online" = "Visiter Band Room Online";
+
+"About" = "À Propos";
+"© 2020 Alexander Burdiss" = "© 2020 Alexander Burdiss";
+"Special Thanks to Qian Yu" = "Merci à Qian Yu";
 "Send Feedback" = "Envoyer un commentaire";
-/* This needs to have the trailing space in English*/
-"Visit " = "Visiter ";
-"Band Room Online" = "Band Room Online";
 
 // ScaleResourceModel
 // Most constructions and names do not need translated, only the descriptions.

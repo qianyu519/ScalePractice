@@ -117,26 +117,10 @@
 "Half Diminished Seventh" = "半减七和弦";
 "Diminished Seventh" = "减七和弦";
 
-//// Settings View
-///* View Title */
-//"Scale Practice" = "音阶练习";
-///* Designer Acknowledgement */
-//"DesignerBlurb" = "APP由Alexander Burdiss和Qian Yu制作";
-///* Bug Report Blurb */
-//"BugReportingBlurb" = "任何问题，评论，或者错误报告，联系Alexander Burdiss aburdiss@gmail.com";
-///* Copyright Information */
-//"CopyrightBlurb" = "©2020 Alexander Burdiss and Qian Yu";
-///* Advertisement for myself. */
-//"Ars Nova Publishing" = "Ars Nova Publishing";
-//"Publishing compositions and arrangements to suit all your needs." = "发表可以满足你所有需求的作曲与整理";
-//"Send Feedback" = "给我们反馈";
-///* This needs to have the trailing space in English*/
-//"Visit " = "浏览 ";
-//"Band Room Online" = "Band Room Online";
-
 // Settings View
 /* View Title */
 "More" = "更多";
+"More Apps by Alexander Burdiss" = "Alexander Burdiss 的更多应用";
 "Visit Ars Nova Publishing" = "浏览 Ars Nova Publishing";
 "Visit Band Room Online" = "浏览 Band Room Online";
 

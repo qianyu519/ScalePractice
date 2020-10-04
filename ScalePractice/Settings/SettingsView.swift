@@ -19,6 +19,25 @@ struct SettingsView: View {
             List {                
                 Section(header: Text("Resources")) {
                     Button(action: {
+                        let url = URL(string: "https://apps.apple.com/us/developer/alexander-burdiss/id1496727055")!
+                        UIApplication.shared.open(url)
+                    }) {
+                        HStack {
+                            Image("TbnRoutinesIcon")
+                            .renderingMode(.original)
+                            .resizable()
+                            .frame(width: 29, height: 29)
+                                .mask(RoundedRectangle(cornerRadius: 7.0))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 7.0)
+                                    .stroke(Color.gray, lineWidth: 0.3)
+                            )
+                            Text("More Apps by Alexander Burdiss")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                        }
+                    }
+                    Button(action: {
                         let url = URL(string: "http://www.arsnovapublishing.com")!
                         UIApplication.shared.open(url)
                     }) {

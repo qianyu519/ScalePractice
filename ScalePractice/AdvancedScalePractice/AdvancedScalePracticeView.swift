@@ -69,12 +69,16 @@ struct AdvancedScalePracticeView: View {
                             ForEach(0 ..< noteNames.count) {
                                Text(self.noteNames[$0])
                         }
-                    }.frame(width: 75, height: 220)
+                    }
+                    .frame(width: 75, height: 220)
+                    .clipped()
                     Picker(selection: $selectedScale, label: Text("Scale")) {
                             ForEach(0 ..< scaleNames.count) {
                                 Text(NSLocalizedString(self.scaleNames[$0], comment: ""))
                         }
-                    }.frame(width: 300, height: 220)
+                    }
+                    .frame(width: 300, height: 220)
+                    .clipped()
                 }
                 HStack {
                     Button(action: {
